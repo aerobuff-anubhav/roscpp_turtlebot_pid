@@ -1,0 +1,13 @@
+# set scenario to either simulation or motion capture system; only one can be true.
+sim: false
+mocap: true
+
+# tune parameters as per need
+Kp_angular: 0.5
+Kp_linear: 1
+
+vel_x_max: 0.2
+yaw_rate_max: 0.7
+
+# kobuki's body is roughly 20 cm and reference point is the centroid. Use 0.2 for simulation and 0.6 for mocap
+safety_distance: 0.4
